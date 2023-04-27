@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="stylesheet" href="build/style.css">
+
+  <!-- FONTS ------------------ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div style="background-image: url(images/bg-pattern-desktop.svg);"
+     class="mobile:bg-cover mobile:bg-center
+            tablet:bg-contain tablet:bg-left-top mobile:max-w-screen-mobile tablet:max-w-screen-tablet desktop:max-w-screen-desktop mx-auto">
+
+  <div class="tablet:relative tablet:h-full">  
+    
+    <!-- Logo -------------------- -->
+    <div class="tablet:w-7/12">
+      <img src="images/logo.svg" alt="Logo" class="p-6 tablet:p-16 desktop:px-40">
+    </div>
+
+    <div class="w-fit h-fit tablet:w-5/12 tablet:absolute tablet:right-0 tablet:top-0">
+      <img src="images/hero-mobile.jpg" alt="#base_apparel" class="visible tablet:hidden">
+      <img src="images/hero-desktop.jpg" alt="#base_apparel" class="hidden tablet:block">
+    </div>
+
+    <div class="w-full tablet:w-7/12 px-6 tablet:pl-16 desktop:pl-40">
+
+      <h1 class="text-center tablet:text-left px-6 tablet:px-0 pt-6
+                 text-3xl tablet:text-4xl desktop:text-6xl 
+                 text-washedOutRed w-full tablet:w-3/4 desktop:w-1/2
+                 leading-none laptop:leading-tight desktop:leading-snug
+                  font-josefin font-light uppercase tracking-widest">
+          We're
+          <span class="block text-darkGrayishRed font-semibold tablet:w-1/2 desktop:w-full">
+            coming soon
+          </span>
+      </h1>
+
+      <p class="w-full mt-6 mb-10 text-washedOutRed leading-tight
+                font-josefin text-sm text-center tracking-wider
+                tablet:w-3/4 tablet:mt-10 tablet:text-left 
+                desktop:mt-12 laptop:leading-normal tablet:text-base">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <!-- BUTTON ------------------------------ -->
+      <form novalidate>
+        <div class="relative w-full">
+          <label>
+            <input type="email" id="mail" placeholder="Email Address"
+                 class="peer w-full tablet:w-3/4
+                       border border-washedOutRed rounded-3xl py-2 pl-5
+                       text-base placeholder-washedOutRed text-washedOutRed font-josefin
+                       font-extralight
+                       focus:outline-none
+                       focus:border-softRed
+                       invalid:border-redM invalid:text-redM
+                       focus:invalid:border-redM"                       
+                     id="mail" name="mail" minlength="11"/> 
+                    
+            <p class="mt-1 ml-4 invisible peer-invalid:visible text-redM text-sm">
+              Please provide a valid email address.
+            </p>
+          </label>
+                             
+          <button type="submit" id="send" disabled
+                  class="w-20 p-2 absolute top-0 right-0 tablet:right-1/4
+                      bg-gradient-to-r from-spanishPink to-ruddyPink
+                      border border-spanishPink rounded-3xl shadow-xl
+                      hover:bg-gradient-to-r
+                      hover:from-lavenderBlush hover:to-spanishPink                    
+                      hover:border-l-lavenderBlush
+                      focus:outline-none cursor-pointer">
+            <span class="h-fit">
+              <img src="images/icon-arrow.svg" alt="" class="mx-auto h-6">
+            </span>
+          </button>
+        </div>
+      </form>       
+    </div>  
+  </div> 
+  
+  <footer class="mobile:max-w-screen-mobile desktop:max-w-screen-desktop mx-auto">
+    <div class="tablet:w-7/12 mt-6 tablet:mt-8 laptop:mt-28 text-center">
+      <p class="font-josefin text-darkGrayishRed text-xs desktop:text-sm">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">EK Web Art</a>.
+      </p>
+    </div>  
+  </footer>
+</div>  
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
